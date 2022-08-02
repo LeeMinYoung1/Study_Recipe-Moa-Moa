@@ -40,7 +40,7 @@ public class ProductDAO {
 		
 		return conn;
 	}
-	public ProductDTO getProductByTitle(String t) {
+	public ProductDTO getProductByTitle(String t) { // 상품 조회하기
 		conn=getConnection();
 		String SQL="SELECT mealkit_num, post_code, mealkit_title, mealkit_count, mealkit_price, mealkit_content, mealkit_sell_period, main_ingredient, addition_ingredient, view_count, mealkit_sort FROM mealkit WHERE mealkit_title=?";
 		try {
@@ -68,7 +68,7 @@ public class ProductDAO {
 		}
 		return null;
 	}
-	public ArrayList<ProductDTO> getAllProduct() {
+	public ArrayList<ProductDTO> getAllProduct() { // 모든 상품 목록 가져오기
 		ArrayList<ProductDTO> list = new ArrayList<>();
 		
 		conn=getConnection();

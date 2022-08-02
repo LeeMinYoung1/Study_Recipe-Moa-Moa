@@ -51,7 +51,7 @@ public class PostDAO {
 //		return "";
 //	}	
 	
-	public void write(PostDTO dto) {
+	public void write(PostDTO dto) { //게시글쓰기
 		conn=null;
 		pstmt = null;
 		
@@ -79,7 +79,7 @@ public class PostDAO {
 		}
 	}
 	
-	public PostDTO getPost(String code) {
+	public PostDTO getPost(String code) { // 조회할 게시글 가져오기
 		conn=null;
 		pstmt = null;
 		
@@ -109,7 +109,7 @@ public class PostDAO {
 		return null;
 	}
 	
-	public List<PostDTO> getAllPostDatas(){
+	public List<PostDTO> getAllPostDatas(){ // 게시글 목록 모두 가져오기
 		List<PostDTO> list = new ArrayList<>();
 		
 		Connection conn=null;

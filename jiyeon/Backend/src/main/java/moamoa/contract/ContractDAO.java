@@ -37,7 +37,7 @@ public class ContractDAO {
 		return conn;
 	}
 	
-	public void writeMealkit(ProductDTO dto) {
+	public void writeMealkit(ProductDTO dto) { //밀키트 작성
 		conn=null;
 		pstmt = null;
 		
@@ -69,7 +69,7 @@ public class ContractDAO {
 			e.printStackTrace();
 		}
 	}
-	public void writeContract(ContractDTO dto) {
+	public void writeContract(ContractDTO dto) { //밀키트 계약서 작성
 		conn=null;
 		pstmt = null;
 		

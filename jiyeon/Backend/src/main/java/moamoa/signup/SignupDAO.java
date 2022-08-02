@@ -31,7 +31,7 @@ public class SignupDAO {
 		return conn;
 	}
 	////////////insert
-	public void signuplnsert(SignupDTO dto) {
+	public void signuplnsert(SignupDTO dto) { // 회원가입
 		
 		Connection conn=null;
 		PreparedStatement pstmt = null;

@@ -39,7 +39,7 @@ public class CommentDAO {
 		return conn;
 	}
 	
-	public void write(CommentDTO dto) {
+	public void write(CommentDTO dto) { //댓글 작성
 		conn=null;
 		pstmt = null;
 		
@@ -67,7 +67,7 @@ public class CommentDAO {
 		}
 	}
 	
-	private List<CommentDTO> makeCommentList(ResultSet rs) throws SQLException{
+	private List<CommentDTO> makeCommentList(ResultSet rs) throws SQLException{ //댓글 목록 만들기
 		List<CommentDTO> commentList = new ArrayList<>();
 		while(rs.next()) {
 			String code = rs.getString("post_comment");
@@ -81,8 +81,8 @@ public class CommentDAO {
 		}//while----
 		return commentList;
 	}
-	public List<CommentDTO> commentSet(String title)
-	throws SQLException{
+	public List<CommentDTO> commentSet(String title) 
+	throws SQLException{ //댓글 목록 선택하기
 		try {		
 			conn=null;
 			pstmt = null;

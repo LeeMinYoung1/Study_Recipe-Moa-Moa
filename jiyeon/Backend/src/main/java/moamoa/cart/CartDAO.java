@@ -44,7 +44,7 @@ public class CartDAO {
 		return conn;
 	}
 	
-	public void addCart(ProductDTO dto) {
+	public void addCart(ProductDTO dto) { //장바구니에 상품 추가
 		conn=null;
 		pstmt = null;
 		
@@ -74,7 +74,7 @@ public class CartDAO {
 		}
 	}
 	
-	public  ArrayList<CartDTO> getCartByid(String id) {
+	public  ArrayList<CartDTO> getCartByid(String id) { // 장바구니에 아이디에 따라 목록 보여주기
 		ArrayList<CartDTO> list = new ArrayList<>();
 		conn=null;
 		pstmt = null;
@@ -102,7 +102,7 @@ public class CartDAO {
 		}
 		return list;
 	}
-	public void DeleteCartByid(String id) {
+	public void DeleteCartByid(String id) { // 장바구니 목록 삭제
 		conn=null;
 		pstmt = null;
 		conn=getConnection();

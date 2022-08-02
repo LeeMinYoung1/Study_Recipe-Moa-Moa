@@ -72,7 +72,7 @@ public class SearchDAO {
 //	}
 //	
 	//--------------
-	private List<PostDTO> makePostList(ResultSet rs) throws SQLException{
+	private List<PostDTO> makePostList(ResultSet rs) throws SQLException{ // 검색했던 게시글 리스트 가져오기
 		List<PostDTO> postList = new ArrayList<>();
 		while(rs.next()) {
 			String code = rs.getString("post_code");
@@ -89,7 +89,7 @@ public class SearchDAO {
 		return postList;
 	}
 	
-	private List<ProductDTO> makeMealkitList(ResultSet rs) throws SQLException{
+	private List<ProductDTO> makeMealkitList(ResultSet rs) throws SQLException{ // 검색했던 밀키트 리스트 가져오기
 		List<ProductDTO> mealkitList = new ArrayList<>();
 		while(rs.next()) {
 			String num = rs.getString("mealkit_num");
@@ -110,7 +110,7 @@ public class SearchDAO {
 		return mealkitList;
 	}
 	
-	public List<PostDTO> findPost(String keyword)
+	public List<PostDTO> findPost(String keyword) // 검색한 게시글 찾기
 	throws SQLException{
 		try {
 			String colTitle="post_title";
@@ -133,7 +133,7 @@ public class SearchDAO {
 	}
 	
 	
-	public List<PostDTO> findPostCategory(String keyword)
+	public List<PostDTO> findPostCategory(String keyword) // 카테고리에 해당하는 게시글 찾기
 	throws SQLException{
 		try {
 			String colCategory="small_code";
@@ -156,7 +156,7 @@ public class SearchDAO {
 	}
 	
 	/*---------------------------------------------------*/
-	public List<ProductDTO> findMealkit(String keyword)
+	public List<ProductDTO> findMealkit(String keyword) // 검색한 밀키트 찾기
 			throws SQLException{
 				try {
 					String colTitle="mealkit_title";
@@ -177,7 +177,7 @@ public class SearchDAO {
 			}
 	
 	
-	public List<ProductDTO> findMealkitCategory(String keyword)
+	public List<ProductDTO> findMealkitCategory(String keyword) // 카테고리에 해당하는 밀키트 찾기
 			throws SQLException{
 				try {
 					String colTitle="mealkit_sort";
