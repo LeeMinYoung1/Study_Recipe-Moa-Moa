@@ -293,6 +293,7 @@
             <h2 class="subtitle" id="sub1"style="padding-top:100px !important; ">레시피</h2>
                         <br>
 				<%
+					//DAO를 통해 게시글 연결
 					request.setCharacterEncoding("utf-8");
 					String post_title=request.getParameter("postTitle");
 					PostDTO dto = new PostDAO().getPost(post_title);
@@ -300,6 +301,7 @@
 					//System.out.println(result.size());
 				%>
 				<br>
+				<!-- 게시글 상세 조회 테이블 생성 -->
 				<table style="text-align: center; border: 1px solid #dddddd ; width: 100%; height: 500px;">
 				
 						 <tr>

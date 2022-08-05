@@ -285,6 +285,7 @@
                     </div>
                 </div>
             </div>
+            <!-- 카테고리 목록 출력하기(search.jsp 코드 이용) -->
             <div class="container">
             <h2 class="subtitle" id="sub1"style="padding-top:100px !important; ">카테고리별 검색</h2>
                         <br>

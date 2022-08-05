@@ -296,6 +296,7 @@
 					List<PostDTO> presult = dao.findPost(pkeyword);
 					//System.out.println(result.size());
 				%>
+				<!-- 레시피(게시글) 검색 테이블 생성 -->
 				<table style="text-align: center; border: 1px solid #dddddd ; width: 100%;">
 					<thead>
 						<tr>
@@ -326,6 +327,7 @@
 					List<ProductDTO> mresult = dao.findMealkit(mkeyword);
 					//System.out.println(result.size());
 				%>
+				<!-- 상품(밀키트) 검색 테이블 생성 -->
 				<table style="text-align: center; border: 1px solid #dddddd ; width: 100%;">
 					<thead>
 						<tr>
