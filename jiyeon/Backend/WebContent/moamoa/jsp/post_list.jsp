@@ -322,6 +322,7 @@
 					List<PostDTO> result = dao.getAllPostDatas();
 					//System.out.println(result.size());
 				%>
+				<!-- 게시글 목록 테이블 생성 -->
 				<table style="text-align: center; border: 1px solid #dddddd ; width: 100%; height: 600px;">
 				<thead>
 					<tr>

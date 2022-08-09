@@ -62,6 +62,7 @@
             </thead>
             <tbody>
             <%
+            	//장바구니에 있던 상품 정보 가져오기
 				String product = request.getParameter("productTitle");
 				System.out.println(product);
            		ProductDAO Pdao = new ProductDAO();

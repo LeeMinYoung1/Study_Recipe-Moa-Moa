@@ -59,6 +59,7 @@
 					List<PostDTO> result = dao.getAllPostDatas();
 					//System.out.println(result.size());
 				%>
+				<!-- 게시글 목록 테이블 생성 -->
 				<table style="text-align: center; border: 1px solid #dddddd ; width: 100%; height: 600px;">
 				<thead>
 					<tr>
@@ -68,7 +69,9 @@
 					</tr>
 				</thead>
 					<tbody>
-						<%for(int i=0; i< result.size(); i++){%>
+						<%
+						//게시글 목록 가져오기 및 연결
+						for(int i=0; i< result.size(); i++){%>
 							 <tr>
 							 <td><a href="con_postDetail.jsp?postTitle=<%= result.get(i).getTitle()%>"><%=result.get(i).getTitle() %></a></td>
 						     <td><%=result.get(i).getDate() %></td>

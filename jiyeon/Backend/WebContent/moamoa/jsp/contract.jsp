@@ -41,11 +41,13 @@
 				<label class="col-sm-2">계약 밀키트</label>
 				<div class="col-sm-3">
 					<input type="text" id="pInput" name="contract_code" class="form-control" readonly/>
+					<!-- 선택할 레시피(게시글) 이동 (팝업 창 생성하기) -->
 					<input type="button" name="name" class="form-control" onclick="mealkit_list_open();" value="레시피 선택" />
 				</div>
 			</div>
 			<div class="form-group row">
 			<%
+			//현재 날짜 가져오기
 			Date nowTime = new Date();
 			SimpleDateFormat sf = new SimpleDateFormat("yyyy년 MM월 dd일 a hh:mm:ss");
 			
