@@ -303,7 +303,7 @@ $(document).ready(function(){
       </div>
       <div style="padding-top: 50px;">
          <!-- table-hover : 마우스 포인터가 있는 행의 배경을 바꾸어 눈에 띄도록 만들어진 클래스 -->
-         <table class="table table-hover">
+         <table class="table table-hover"> <!-- 장바구니 상품 목록 테이블 생성 -->
             <tr>
                <th>상품</th>
                <th>가격</th>
@@ -312,7 +312,7 @@ $(document).ready(function(){
                <th>비고</th>
             </tr>
             <%	
-            
+            	//DAO를 통한 장바구니 목록 불러오기 및 연결 
 				String product = request.getParameter("productTitle");
 	            ProductDAO Pdao = new ProductDAO();
 	       		CartDAO Cdao = new CartDAO();
@@ -338,6 +338,7 @@ $(document).ready(function(){
                   for(int i = 0; i<result.size(); i++){
   					/* ProductDTO product = listOfProduct.get(i); */
             %>
+            <!-- 가져온 목록 출력하기 -->
             <tr>
                <td><%= result.get(i).getMealkit_title() %></td>
                	<td><%=result.get(i).getMealkit_count() %></td>

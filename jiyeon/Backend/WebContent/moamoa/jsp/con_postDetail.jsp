@@ -54,6 +54,7 @@
             <h2 class="subtitle" id="sub1"style="padding-top:100px !important; ">레시피</h2>
                         <br>
 				<%
+					//선택한 게시글 가져오기
 					String post_title=request.getParameter("postTitle");
 					PostDTO dto = new PostDAO().getPost(post_title);
 					
@@ -76,6 +77,7 @@
 			}
 		</script>
 				<br>
+				<!-- 게시글 조회 테이블 생성 -->
 				<table style="text-align: center; border: 1px solid #dddddd ; width: 100%; height: 600px;">
 				
 						 <tr>
@@ -99,6 +101,7 @@
 					     </tr>
 					     <br>
 				</table>
+				<!-- 버튼 누르면 팝업 창 삭제 및 계약 밀키트 작성 -->
 					<input type="button" id="Input" class="box_btn w144 h45 fs15" value="계약하기" onclick="setText()">
 					
 			</div>

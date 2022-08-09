@@ -1,8 +1,13 @@
 package moamoa.signup;
 //DTO: 값을 받아오는 작업, 중복 확인 or 휴대폰 인증 no.
+//DTO(Data Transfer Object)
+/*DTO란 DAO클래스를 이용하여 데이터베이스에서 데이터를 관리할 때 데이터를 일반적인 변수에 저장하여 사용할 수 있지만 해당 데이터의 클래스를 만들어 사용합니다.
+
+*
+*/
 public class SignupDTO {
-	private String join_name;//ind_signup_step2.html 파일의 name="inflow_id"가져오기
-	private String join_id;
+	private String join_name; //ind_signup_step2.html 파일의 name="inflow_id"가져오기
+	private String join_id; //
 	private String join_pw;
 	private String join_pw1;
 	private String join_cell1;
@@ -75,3 +80,10 @@ public class SignupDTO {
 		this.inflow_id = inflow_id;
 	}	
 }
+
+/*
+자바빈에서처럼 변수를 선언하고 geetter와 setter을 만들어줍니다.
+
+
+
+*/

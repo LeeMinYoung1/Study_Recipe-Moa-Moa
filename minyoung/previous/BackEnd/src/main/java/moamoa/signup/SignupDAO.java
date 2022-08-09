@@ -1,5 +1,10 @@
 package moamoa.signup;
-//DAO: Data 처리
+/*DAO: Data 처리
+DAO(Data Access Object)란 데이터베이스에 접속해서 데이터 수정, 삭제, 추가 등의 작업을 하는 클래스입니다.
+일반적인 JSP 혹은 Servlet 페이지 내에서 위의 로직들을 함께 쓸 수 있지만 유지보수 및 코드의 모듈화를 위해 DAO라는 클래스를 따로 만들어 사용합니다.
+DTO란 DAO클래스를 이용하여 데이터베이스에서 데이터를 관리할 때 데이터를 일반적인 변수에 저장하여 사용할 수 있지만 해당 데이터의 클래스를 만들어 사용합니다.
+
+*/
 
 import java.sql.*;
 import java.util.*;

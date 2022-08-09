@@ -9,6 +9,7 @@
 </head>
 <body>
 <%
+	//회원가입한 아이디가 중복되는지 구분하기
 	String id = request.getParameter("join_id");
 	
 	SignupDTO dto=new SignupDTO();
