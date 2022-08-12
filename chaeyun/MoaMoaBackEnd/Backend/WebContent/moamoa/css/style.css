@@ -1,32 +1,38 @@
+/* 페이지 전체와 body에 스타일 지정 */
 html,
 body {
-	height: 100%;
-	font-family: "Cairo", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	font-smooth: antialiased;
+	height: 100%; /* 높이가 100% */
+	font-family: "Cairo", sans-serif; /* 폰트가 Cario */
+	-webkit-font-smoothing: antialiased; /* 텍스트가 렌더링될 때 부드럽게 표현 */
+	font-smooth: antialiased; /* 폰트를 더 부드럽게 해줌 */
 }
 
+/* h1, h2, h3, h4, h5, h6에 스타일 지정*/
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	margin: 0;
-	color: #111111;
-	font-weight: 400;
-	font-family: "Cairo", sans-serif;
+	margin: 0; /* 바깥쪽 여백을 0으로 설정 */
+	color: #111111;/* 글씨 색상을 설정 */
+	font-weight: 400; /* 글씨 굵기를 400으로 설정 */
+	font-family: "Cairo", sans-serif; /* 폰트가 Cario */
 }
 
+/* h1에 스타일 지정 */
 h1 {
-	font-size: 70px;
+	font-size: 70px; /* 글자 크기를 70px로 설정 */
 }
 
+/* h2에 스타일 지정 */
 h2 {
-	font-size: 36px;
+	font-size: 36px; /* 글자 크기를 36px로 설정 */
 }
+
+/* h2 안에 있는 subtitle이라는 class 이름에 스터일 지정 */
 h2.subtitle {
-    padding: 80px 0 50px;
+    padding: 80px 0 50px; /* 안쪽 여백을 워로는 80px, 오른쪽는 0px, 아래쪽으로는 50px, 왼쪽으로는 0px로 지정 */
     color: #282828;
     font-size: 24px;
     font-weight: normal;
