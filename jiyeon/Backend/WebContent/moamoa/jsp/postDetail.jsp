@@ -350,7 +350,7 @@
 						<%
 							CommentDAO cdao = new CommentDAO();
 							List<CommentDTO> result = cdao.commentSet(post_title);
-							for(int i=0; i<result.size(); i++){
+							for(int i=0; i<result.size(); i++){//for문을 통해 테이블 추가 및 연결
 						%>
 						<div class="container">
 							<div class="row">

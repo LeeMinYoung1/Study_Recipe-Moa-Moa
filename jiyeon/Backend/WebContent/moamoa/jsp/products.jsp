@@ -318,7 +318,7 @@
 	<div class="container">
 		<div class="row" align="center">
 			<%
-				for(int i = 0; i<product.size(); i++){
+				for(int i = 0; i<product.size(); i++){//for문을 통해 테이블 추가 및 연결
 					/* ProductDTO product = listOfProduct.get(i); */
 					System.out.println(i);
 					

@@ -79,7 +79,7 @@
 				<br>
 				<!-- 게시글 조회 테이블 생성 -->
 				<table style="text-align: center; border: 1px solid #dddddd ; width: 100%; height: 600px;">
-				
+				<!-- 해당하는 게시글 가져오기 -->
 						 <tr>
 						 	<td>제목</td>
 						 	<td id="title" value="<%=dto.getTitle() %>"><%=dto.getTitle() %></td>

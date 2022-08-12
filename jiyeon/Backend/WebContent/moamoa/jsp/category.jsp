@@ -307,7 +307,8 @@
 						</tr>
 					</thead>
 				<tbody>
-					<%for(int i=0; i<presult.size(); i++){%>
+					<%for(int i=0; i<presult.size(); i++){//for문을 통해 테이블 추가 및 연결
+					%>
 						 <tr>
 						 	<td><a href="postDetail.jsp?postTitle=<%= presult.get(i).getTitle()%>"><%=presult.get(i).getTitle() %></a></td>
 					     	<td><%=presult.get(i).getDate() %></td>
@@ -339,7 +340,8 @@
 						</tr>
 					</thead>
 					<tbody>
-					<%for(int i=0; i<mresult.size(); i++){%>
+					<%for(int i=0; i<mresult.size(); i++){//for문을 통해 테이블 추가 및 연결
+					%>
 						 <tr>
 							 <td><a href="product.jsp?productTitle=<%= mresult.get(i).getMealkit_title() %>"><%=mresult.get(i).getMealkit_title() %></a></td>
 						     <td><%=mresult.get(i).getMain_ingredient() %></td>

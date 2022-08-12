@@ -71,7 +71,8 @@
 					<tbody>
 						<%
 						//게시글 목록 가져오기 및 연결
-						for(int i=0; i< result.size(); i++){%>
+						for(int i=0; i< result.size(); i++){ //for문을 통해 테이블 추가 및 연결
+						%>
 							 <tr>
 							 <td><a href="con_postDetail.jsp?postTitle=<%= result.get(i).getTitle()%>"><%=result.get(i).getTitle() %></a></td>
 						     <td><%=result.get(i).getDate() %></td>

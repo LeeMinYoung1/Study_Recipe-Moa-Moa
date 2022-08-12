@@ -332,7 +332,8 @@
 					</tr>
 				</thead>
 					<tbody>
-						<%for(int i=0; i< result.size(); i++){%>
+						<%for(int i=0; i< result.size(); i++){//for문을 통해 테이블 추가 및 연결
+						%>
 							 <tr>
 							 <td><a href="postDetail.jsp?postTitle=<%= result.get(i).getTitle()%>"><%=result.get(i).getTitle() %></a></td>
 						     <td><%=result.get(i).getDate() %></td>

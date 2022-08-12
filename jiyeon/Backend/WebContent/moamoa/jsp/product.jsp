@@ -34,7 +34,7 @@
             <img alt="" src="${pageContext.request.contextPath}/resources/images/<%=product.getMealkit_num() %>" style="width:100%">
          </div> --%>
          <div class="col-md-6">
-        
+        <!-- 해당하는 상품 가져오기 -->
             <h3><b>상품 이름 :</b><span class="badge badge-danger" ><%=product.getMealkit_title() %><span></b></h3>
             <p><b>주 재료 : </b><%=product.getMain_ingredient() %></p>
             <p><b>재고 수 : </b><%=product.getMealkit_count() %></p>

@@ -85,7 +85,7 @@
                   int total = product.getUnitprice() * product.getQuantity();
                   sum += total; */
                   int sum = 0;
-                  for(int i = 0; i<result.size(); i++){
+                  for(int i = 0; i<result.size(); i++){//for문을 통해 테이블 추가 및 연결
   					/* ProductDTO product = listOfProduct.get(i); */
   					System.out.println(i);
             %>
