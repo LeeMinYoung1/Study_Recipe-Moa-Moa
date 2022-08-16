@@ -44,7 +44,7 @@ public class CommentDAO {
 		pstmt = null;
 		
 		conn=getConnection();
-		
+		//SQL 문 작성
 		String sql="INSERT INTO post_comment(post_comment, post_title,  post_comment_writer, post_comment_wirte_date, post_comment_content) VALUES(?,?,?,sysdate,?)";
 		try {
 			
@@ -87,6 +87,7 @@ public class CommentDAO {
 			conn=null;
 			pstmt = null;
 			conn = getConnection();
+			//SQL 문 작성
 			String sql="select * from post_comment where post_title like ?";
 			//System.out.println(sql);
 			pstmt = conn.prepareStatement(sql);

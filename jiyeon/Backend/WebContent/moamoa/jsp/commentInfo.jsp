@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<!-- 댓글 작성 버튼 클릭시 실행 -->
 <%	
 	request.setCharacterEncoding("utf-8");
 	String title = request.getParameter("title");

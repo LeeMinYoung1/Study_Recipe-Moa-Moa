@@ -1,5 +1,5 @@
 package moamoa.signup;
-
+//DTO로 데이터 저장 및 사용 (get, set)
 public class SignupDTO {
 	private String join_name;
 	private String join_id;

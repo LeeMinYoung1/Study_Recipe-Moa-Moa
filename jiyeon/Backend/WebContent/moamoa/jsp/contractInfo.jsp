@@ -13,6 +13,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<!-- 밀키트 추가 기능 -->
 <%	
 	request.setCharacterEncoding("utf-8");
 	String mealkit_title = request.getParameter("mealkit_title");

@@ -1,5 +1,5 @@
 package moamoa.post;
-
+//DTOë¡œ ë°ì´í„° ì €ì¥ ë° ì‚¬ìš© (get, set)
 public class PostDTO {
 	private String post_code;
 	private String title;
@@ -9,7 +9,7 @@ public class PostDTO {
 	private String category;
 	private String date;
 	
-	public PostDTO() { //À§¿¡ ¸¸µç PostDTO class »ç¿ëÇÏ±â À§ÇØ ¸Ş¼Òµå »ı¼ºÀÚ È£Ãâ
+	public PostDTO() { //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ PostDTO class ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ş¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½
 	}
 	public PostDTO(String code, String title, String id, String ingredient, String content, String category,
 			String date) {

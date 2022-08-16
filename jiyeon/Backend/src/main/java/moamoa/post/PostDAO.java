@@ -56,7 +56,7 @@ public class PostDAO {
 		pstmt = null;
 		
 		conn=getConnection();
-		
+		//SQL 문 작성
 		String sql="INSERT INTO MILKITO_POST(post_title, post_write_date, post_ingredient, post_content, small_code) VALUES(?,sysdate,?,?,?)";
 		try {
 			
@@ -84,6 +84,7 @@ public class PostDAO {
 		pstmt = null;
 		
 		conn=getConnection();
+		//SQL 문 작성
 		String SQL="SELECT post_title, post_write_date, post_ingredient, post_content, small_code FROM MILKITO_POST WHERE post_title=?";
 		
 		try {
@@ -115,7 +116,7 @@ public class PostDAO {
 		Connection conn=null;
 		PreparedStatement pstmt=null;
 		ResultSet rs = null;
-		
+		//SQL 문 작성
 		String sql = "select * from MILKITO_POST order by post_code asc";
 		
 		conn=getConnection();

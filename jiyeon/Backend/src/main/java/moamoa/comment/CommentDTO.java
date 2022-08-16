@@ -1,5 +1,5 @@
 package moamoa.comment;
-
+//DTO로 데이터 저장 및 사용 (get, set)
 public class CommentDTO {
 	private String post_comment;
 	private String post_title;

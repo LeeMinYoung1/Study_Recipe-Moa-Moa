@@ -1,5 +1,5 @@
 package moamoa.product;
-
+//DTO로 데이터 저장 및 사용 (get, set)
 public class ProductDTO {
 	private String mealkit_num;
 	private String post_code;

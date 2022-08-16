@@ -34,6 +34,7 @@
 
 </head>
 <body>
+<!-- 결제 화면 -->
    <%-- <jsp:include page="menu.jsp"/> --%>
    <div class="jumbotron">
       <div class="container">

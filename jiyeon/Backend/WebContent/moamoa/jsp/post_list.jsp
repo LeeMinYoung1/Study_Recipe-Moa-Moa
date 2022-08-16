@@ -51,6 +51,7 @@
 
     </head>
 <body>
+<!-- 게시글(레시피) 목록 화면 -->
         <div class="humberger__menu__overlay"></div>
         <div class="humberger__menu__wrapper">
             <div class="humberger__menu__logo">

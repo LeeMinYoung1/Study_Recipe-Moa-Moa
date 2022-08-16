@@ -50,7 +50,7 @@
 
     </head>
 <body>
-
+<!-- 팝업 게시글(레시피) 목록 화면 -->
             <div class="container">
             <h2 class="subtitle" id="sub1"style="padding-top:100px !important; ">계약 레시피 선택</h2>
                         <br>

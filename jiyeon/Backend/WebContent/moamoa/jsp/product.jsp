@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 </head>
 <body>
+<!-- 상품(밀키트) 상세보기 화면 -->
   <%--  <jsp:include page="menu.jsp"/> --%>
    <div class="jumbotron">
       <div class="contaner">

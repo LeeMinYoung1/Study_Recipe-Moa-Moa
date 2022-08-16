@@ -1,5 +1,5 @@
 package moamoa.contract;
-
+//DTO로 데이터 저장 및 사용 (get, set)
 public class ContractDTO {
 	private String contract_code;
 	private String id;

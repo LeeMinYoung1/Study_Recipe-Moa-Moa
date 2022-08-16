@@ -35,7 +35,7 @@ public class SignupDAO {
 		
 		Connection conn=null;
 		PreparedStatement pstmt = null;
-		
+		//SQL 문 작성
 		String sql = "insert INTO MEMBER(id, pwd, name, phone_num, email) values(?, ?, ?, ?, ?)";
 		
 		conn=getConnection();
@@ -68,7 +68,7 @@ public class SignupDAO {
 		Connection conn=null;
 		PreparedStatement pstmt=null;
 		ResultSet rs = null;
-		
+		//SQL 문 작성
 		String sql = "select * from MEMBER order by num asc";
 		
 		conn=getConnection();
@@ -105,6 +105,7 @@ public class SignupDAO {
 		Connection conn=null;
 		PreparedStatement pstmt=null;
 		ResultSet rs = null;
+		//SQL 문 작성
 		String sql = "select id from MEMBER where id=?";
 		
 		conn=getConnection();

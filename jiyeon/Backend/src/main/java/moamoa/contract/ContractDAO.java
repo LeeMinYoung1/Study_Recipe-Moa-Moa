@@ -42,7 +42,7 @@ public class ContractDAO {
 		pstmt = null;
 		
 		conn=getConnection();
-		
+		//SQL 문 작성
 		String sql="INSERT INTO mealkit(mealkit_num, post_code, mealkit_title, mealkit_count, mealkit_price, mealkit_content, mealkit_sell_period, main_ingredient, addition_ingredient, view_count, mealkit_sort) VALUES(?,?,?,?,?,?,sysdate,?,?,?,?)";
 		try {
 			
@@ -74,7 +74,7 @@ public class ContractDAO {
 		pstmt = null;
 		
 		conn=getConnection();
-		
+		//SQL 문 작성
 		String sql="INSERT INTO mealkit_rel_con(contract_code, id, mealkit_title, contract_day, contract_facts, milkit_registration_amount, contract_amount) VALUES(?,?,?,sysdate,?,?,?)";
 	
 		try {

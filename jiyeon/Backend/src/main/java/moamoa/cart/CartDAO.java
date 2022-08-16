@@ -49,7 +49,7 @@ public class CartDAO {
 		pstmt = null;
 		
 		conn=getConnection();
-		
+		//SQL 문 작성
 		String sql="INSERT INTO shopping_cart(cart_code, id, mealkit_num, mealkit_title, mealkit_count, mealkit_price, mem_sort) VALUES(?,?,?,?,?,?,?)";
 		try {
 			
@@ -79,6 +79,7 @@ public class CartDAO {
 		conn=null;
 		pstmt = null;
 		conn=getConnection();
+		//SQL 문 작성
 		String SQL="SELECT cart_code, id, mealkit_num, mealkit_title, mealkit_count, mealkit_price, mem_sort FROM shopping_cart WHERE id=?";
 		try {
 			PreparedStatement pstmt=conn.prepareStatement(SQL);
@@ -106,6 +107,7 @@ public class CartDAO {
 		conn=null;
 		pstmt = null;
 		conn=getConnection();
+		//SQL 문 작성
 		String SQL="delete FROM shopping_cart WHERE id=?";
 		try {
 			PreparedStatement pstmt=conn.prepareStatement(SQL);

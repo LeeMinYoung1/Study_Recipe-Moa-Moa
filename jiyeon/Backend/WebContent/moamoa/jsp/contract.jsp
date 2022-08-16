@@ -27,6 +27,7 @@
 </script>
 </head>
 <body>
+<!-- 밀키트 계약(작성) 화면 -->
 	<div class="jumbotron"> 
 		<div class="container">
 			<h1 class="display-3">밀키트 계약</h1>

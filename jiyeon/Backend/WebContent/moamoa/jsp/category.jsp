@@ -52,6 +52,7 @@
 
     </head>
 <body>
+<!-- 카테고리 클릭시 해당 카테고리 목록 화면 -->
         <div class="humberger__menu__overlay"></div>
         <div class="humberger__menu__wrapper">
             <div class="humberger__menu__logo">

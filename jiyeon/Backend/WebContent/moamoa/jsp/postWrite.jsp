@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<!-- 게시글(레시피) 쓰기 기능 -->
 <%	
 	String title = request.getParameter("title");
 	String ingredient = request.getParameter("ingredient");

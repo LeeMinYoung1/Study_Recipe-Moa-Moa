@@ -50,6 +50,7 @@
 
     </head>
 <body>
+<!-- 팝업 게시글(레시피) 상세 보기 화면 -->
             <div class="container">
             <h2 class="subtitle" id="sub1"style="padding-top:100px !important; ">레시피</h2>
                         <br>

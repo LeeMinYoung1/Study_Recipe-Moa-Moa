@@ -118,6 +118,7 @@ public class SearchDAO {
 			
 			
 			conn = getConnection();
+			//SQL 문 작성
 			String sql="select * from "+colTable+" where "+colTitle+" like ?";
 			//System.out.println(sql);
 			pstmt = conn.prepareStatement(sql);
@@ -141,6 +142,7 @@ public class SearchDAO {
 			
 			
 			conn = getConnection();
+			//SQL 문 작성
 			String sql="select * from "+colTable+" where "+colCategory+" like ?";
 			//System.out.println(sql);
 			pstmt = conn.prepareStatement(sql);
@@ -164,6 +166,7 @@ public class SearchDAO {
 					
 					
 					conn = getConnection();
+					//SQL 문 작성
 					String sql="select * from "+colTable+" where "+colTitle+" like ?";
 					//System.out.println(sql);
 					pstmt = conn.prepareStatement(sql);
@@ -185,6 +188,7 @@ public class SearchDAO {
 					
 					
 					conn = getConnection();
+					//SQL 문 작성
 					String sql="select * from "+colTable+" where "+colTitle+" like ?";
 					//System.out.println(sql);
 					pstmt = conn.prepareStatement(sql);

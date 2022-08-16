@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<!-- 회원가입 시 아이디 중복 체크 기능 -->
 <%
 	//회원가입한 아이디가 중복되는지 구분하기
 	String id = request.getParameter("join_id");

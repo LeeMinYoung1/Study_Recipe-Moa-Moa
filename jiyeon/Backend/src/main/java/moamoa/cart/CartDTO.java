@@ -1,5 +1,5 @@
 package moamoa.cart;
-
+//DTO로 데이터 저장 및 사용 (get, set)
 public class CartDTO {
 	private String cart_code;
 	private String id;
