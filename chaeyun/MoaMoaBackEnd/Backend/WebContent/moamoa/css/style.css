@@ -392,7 +392,7 @@ ol {
 	visibility: visible; /* 눈에 보이게 함 */
 }
 
-/* .header__top__right__languagel라는 클래스에 HTML이 끝난 후 스타일 지정 */
+/* header__top__right__language라는 클래스에 HTML이 끝난 후 스타일 지정 */
 .header__top__right__language:after {
 	position: absolute; /* 요소의 위치를 변경하고 싶을 때 사용 / static인 상태를 가지고 있지 않은 것을 기준으로 주어진 픽셀만큼 움직이는 것*/
 	right: -21px; /* 오른쪽으로 -21px */
@@ -401,103 +401,116 @@ ol {
 	width: 1px; /* 넓이를 1px */
 	background: #000000; /* 배경색을 지정 */
 	opacity: 0.1; /* 투명도 지정 (1이 기본(0.0 ~ 1.0) 숫자가 작을수록 투명 )*/
-	content: "";  /* 뒤에 ""이라는 문자열을 붙임(::after은 뒤애 붙이는 것 ::before은 앞에 붙이는 것)*/
+	content: "";  /* 뒤에 ""이라는 문자열을 붙임(::after은 뒤에 붙이는 것 ::before은 앞에 붙이는 것)*/
 }
 
+/* header__top__right__language라는 클래스의 이미지에 스타일 지정 */
 .header__top__right__language img {
-	margin-right: 6px;
+	margin-right: 6px; /* 오른쪽 안쪽 여백을 6px로 지정 */
 }
 
+/* header__top__right__language라는 클래스의 div태그에 스타일 지정 */
 .header__top__right__language div {
-	font-size: 14px;
-	color: #1c1c1c;
-	display: inline-block;
-	margin-right: 4px;
+	font-size: 14px; /* 글자 크기를 14px로 지정 */
+	color: #1c1c1c; /* 글자 색상을 지정 */
+	display: inline-block; /* 여러 개의 엘리먼트를 한 줄에 정확히 원하는 너비만큼 배치 */
+	margin-right: 4px; /* 오른쪽 안쪽 여백을 4px로 지정 */
 }
 
+/* header__top__right__language라는 클래스의 span태그에 스타일 지정 */
 .header__top__right__language span {
-	font-size: 14px;
-	color: #1c1c1c;
-	position: relative;
-	top: 2px;
+	font-size: 14px; /* 글자 크기를 14px로 지정 */
+	color: #1c1c1c; /* 글자 색상을 지정 */
+	position: relative; /* 위치 이동 시 다른 요소에 영향을 주지 않음 */
+	top: 2px; /* 위쪽으로 2px */
 }
 
+/* header__top__right__language라는 클래스의 ul태그에 스타일 지정 */
 .header__top__right__language ul {
-	background: #222222;
-	width: 100px;
-	text-align: left;
-	padding: 5px 0;
-	position: absolute;
-	left: 0;
-	top: 43px;
-	z-index: 9;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transition: all, 0.3s;
-	-moz-transition: all, 0.3s;
-	-ms-transition: all, 0.3s;
-	-o-transition: all, 0.3s;
-	transition: all, 0.3s;
+	background: #222222; /* 배경색을 지정 */
+	width: 100px; /* 너비를 100px로 지정 */
+	text-align: left; /* 글자를 왼쪽 정렬 */
+	padding: 5px 0; /* 바깥쪽 여백을 워쪽과 아래쪽은 5px로 지정하고, 오른쪽과 왼쪽은 0px로 지정 */
+	position: absolute; /* 요소의 위치를 변경하고 싶을 때 사용 / static인 상태를 가지고 있지 않은 것을 기준으로 주어진 픽셀만큼 움직이는 것*/
+	left: 0; /* 왼쪽으로 0px */
+	top: 43px; /* 위쪽으로는 43px */
+	z-index: 9; /* 겹치게 놓고 싶을 때 (숫자가 클 수록 위로 올라옴) */
+	opacity: 0; /* 투명도 지정 (1이 기본(0.0 ~ 1.0) 숫자가 작을수록 투명 )*/
+	visibility: hidden; /* 눈에 보이지 않게 함 */
+	-webkit-transition: all, 0.3s; /* 0.3초 동안 전부 변환 */
+	-moz-transition: all, 0.3s; /* 0.3초 동안 전부 변환 */
+	-ms-transition: all, 0.3s; /* 0.3초 동안 전부 변환 */
+	-o-transition: all, 0.3s;  /* 0.3초 동안 전부 변환 */
+	transition: all, 0.3s; /* 0.3초 동안 전부 변환 */
 }
 
+/* header__top__right__language라는 클래스의 ul li태그에 스타일 지정 */
 .header__top__right__language ul li {
-	list-style: none;
+	list-style: none; /* 리스트 스타일을 없앰 */
 }
 
+/* header__top__right__language라는 클래스의 ul li의 a태그에 스타일 지정 */
 .header__top__right__language ul li a {
-	font-size: 14px;
-	color: #ffffff;
-	padding: 5px 10px;
+	font-size: 14px;  /* 글자 크기를 14px로 지정 */
+	color: #ffffff; /* 글자 색상을 지정 */
+	padding: 5px 10px; /* 바깥쪽 여백을 워쪽과 아래쪽은 5px로 지정하고, 오른쪽과 왼쪽은 10px로 지정 */
 }
 
+/* header__top__right__auth라는 클래스에 스타일 지정 */
 .header__top__right__auth {
-	display: inline-block;
+	display: inline-block; /* 여러 개의 엘리먼트를 한 줄에 정확히 원하는 너비만큼 배치 */
 }
 
+/* header__top__right__auth라는 클래스의 a 태그에 스타일 지정 */
 .header__top__right__auth a {
-	display: block;
-	font-size: 14px;
-	color: #1c1c1c;
+	display: block; /* 요소들을 줄바꿈 */
+	font-size: 14px; /* 글자 크기를 14px로 지정 */
+	color: #1c1c1c; /* 글자 색상을 지정 */
 }
 
+/* header__top__right__auth라는 클래스의 a 태그의 i태그에 스타일 지정 */
 .header__top__right__auth a i {
-	margin-right: 6px;
+	margin-right: 6px; /* 오른쪽 안쪽 여백을 6px로 지정 */
 }
 
+/* header__logo라는 클래스에 스타일 지정 */
 .header__logo {
-	padding: 15px 0;
+	padding: 15px 0; /* 바깥쪽 여백을 워쪽과 아래쪽은 15px로 지정하고, 오른쪽과 왼쪽은 0px로 지정 */
 }
 
+/* header__logo라는 클래스의 a태그에 스타일 지정 */
 .header__logo a {
-	display: inline-block;
+	display: inline-block; /* 여러 개의 엘리먼트를 한 줄에 정확히 원하는 너비만큼 배치 */
 }
 
+/* header__menu라는 클래스에 스타일 지정 */
 .header__menu {
-	padding: 24px 0;
+	padding: 24px 0; /* 바깥쪽 여백을 워쪽과 아래쪽은 24px로 지정하고, 오른쪽과 왼쪽은 0px로 지정 */
 }
 
+/* header__menu라는 클래스에 ul li 태그에 스타일 지정 */
 .header__menu ul li {
-	list-style: none;
-	display: inline-block;
-	margin-right: 50px;
-	position: relative;
+	list-style: none; /* 리스트 스타일을 없앰 */
+	display: inline-block; /* 여러 개의 엘리먼트를 한 줄에 정확히 원하는 너비만큼 배치 */
+	margin-right: 50px; /* 오른쪽 안쪽 여백을 50px로 지정 */
+	position: relative; /* 위치 이동 시 다른 요소에 영향을 주지 않음 */
 }
 
 .header__menu ul li .header__menu__dropdown {
-	position: absolute;
-	left: 0;
-	top: 50px;
-	background: #222222;
-	width: 180px;
-	z-index: 9;
-	padding: 5px 0;
-	-webkit-transition: all, 0.3s;
-	-moz-transition: all, 0.3s;
-	-ms-transition: all, 0.3s;
-	-o-transition: all, 0.3s;
-	transition: all, 0.3s;
-	opacity: 0;
-	visibility: hidden;
+	position: absolute; /* 요소의 위치를 변경하고 싶을 때 사용 / static인 상태를 가지고 있지 않은 것을 기준으로 주어진 픽셀만큼 움직이는 것*/
+	left: 0; /* 왼쪽으로 0px */
+	top: 50px; /* 위쪽으로는 50px */
+	background: #222222; /* 배경색을 지정 */
+	width: 180px; /* 너비를 100px로 지정 */
+	z-index: 9; /* 겹치게 놓고 싶을 때 (숫자가 클 수록 위로 올라옴) */
+	padding: 5px 0; 
+	-webkit-transition: all, 0.3s; /* 0.3초 동안 전부 변환 */
+	-moz-transition: all, 0.3s; /* 0.3초 동안 전부 변환 */
+	-ms-transition: all, 0.3s; /* 0.3초 동안 전부 변환 */
+	-o-transition: all, 0.3s; /* 0.3초 동안 전부 변환 */
+	transition: all, 0.3s; /* 0.3초 동안 전부 변환 */
+	opacity: 0; /* 투명도 지정 (1이 기본(0.0 ~ 1.0) 숫자가 작을수록 투명 )*/
+	visibility: hidden; /* 눈에 보이지 않게 함 */
 }
 
 .header__menu ul li .header__menu__dropdown li {
