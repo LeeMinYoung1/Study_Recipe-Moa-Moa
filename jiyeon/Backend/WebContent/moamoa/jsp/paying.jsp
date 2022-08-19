@@ -6,7 +6,7 @@
 <%@page import="moamoa.cart.CartDTO" %>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%><!-- 한글 깨짐 오류 방지 -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,7 +64,7 @@
             <tbody>
             <%
             	//장바구니에 있던 상품 정보 가져오기
-				String product = request.getParameter("productTitle");
+				String product = request.getParameter("productTitle");//전달 값 가져오기
 				System.out.println(product);
            		ProductDAO Pdao = new ProductDAO();
            		CartDAO Cdao = new CartDAO();

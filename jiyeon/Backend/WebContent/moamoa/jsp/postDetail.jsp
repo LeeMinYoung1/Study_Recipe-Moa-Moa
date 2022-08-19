@@ -7,7 +7,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><!-- 한글 깨짐 오류 방지 -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recipe Moa Moa</title>
@@ -295,8 +295,8 @@
                         <br>
 				<%
 					//DAO를 통해 게시글 연결
-					request.setCharacterEncoding("utf-8");
-					String post_title=request.getParameter("postTitle");
+					request.setCharacterEncoding("utf-8");// 한글 깨짐 방지
+					String post_title=request.getParameter("postTitle");//전달 값 가져오기
 					PostDTO dto = new PostDAO().getPost(post_title);
 					
 					//System.out.println(result.size());

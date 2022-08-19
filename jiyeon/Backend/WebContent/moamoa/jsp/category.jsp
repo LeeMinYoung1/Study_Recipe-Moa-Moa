@@ -7,7 +7,7 @@
 <%@page import="java.util.*"%>
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><!-- 한글 깨짐 오류 방지 -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recipe Moa Moa</title>
@@ -291,7 +291,7 @@
             <h2 class="subtitle" id="sub1"style="padding-top:100px !important; ">카테고리별 검색</h2>
                         <br>
 				<%
-					String pkeyword = request.getParameter("category_name");
+					String pkeyword = request.getParameter("category_name");//전달 값 가져오기
 					
 					SearchDAO dao = new SearchDAO();
 					List<PostDTO> presult = dao.findPostCategory(pkeyword);
@@ -324,7 +324,7 @@
 				<hr>
 				
 				<%
-					String mkeyword = request.getParameter("category_name");
+					String mkeyword = request.getParameter("category_name");//전달 값 가져오기
 					List<ProductDTO> mresult = dao.findMealkitCategory(mkeyword);
 					//System.out.println(result.size());
 				%>

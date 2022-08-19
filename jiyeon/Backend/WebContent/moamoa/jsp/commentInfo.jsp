@@ -10,9 +10,9 @@
 <body>
 <!-- 댓글 작성 버튼 클릭시 실행 -->
 <%	
-	request.setCharacterEncoding("utf-8");
-	String title = request.getParameter("title");
-	String content = request.getParameter("context");
+	request.setCharacterEncoding("utf-8");// 한글 깨짐 오류 방지
+	String title = request.getParameter("title");//전달 값 가져오기
+	String content = request.getParameter("context");//전달 값 가져오기
 	
 	System.out.println("타이틀"+title);
 	

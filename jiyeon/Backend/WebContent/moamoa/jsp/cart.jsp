@@ -10,7 +10,7 @@
 <html>
 <html lang="zxx">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"><!-- 한글 깨짐 오류 방지 -->
         <meta name="description" content="Ogani Template">
         <meta name="keywords" content="Ogani, unica, creative, html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -314,7 +314,7 @@ $(document).ready(function(){
             </tr>
             <%	
             	//DAO를 통한 장바구니 목록 불러오기 및 연결 
-				String product = request.getParameter("productTitle");
+				String product = request.getParameter("productTitle");//전달 값 가져오기
 	            ProductDAO Pdao = new ProductDAO();
 	       		CartDAO Cdao = new CartDAO();
 				if(product!=null){

@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8"><!-- 한글 깨짐 오류 방지 -->
 <title>Insert title here</title>
 </head>
 <body>

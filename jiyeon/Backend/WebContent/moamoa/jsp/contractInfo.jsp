@@ -9,13 +9,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8"><!-- 한글 깨짐 오류 방지 -->
 <title>Insert title here</title>
 </head>
 <body>
 <!-- 밀키트 추가 기능 -->
 <%	
-	request.setCharacterEncoding("utf-8");
+	request.setCharacterEncoding("utf-8");// 한글 깨짐 오류 방지
+	//전달 값 가져오기
 	String mealkit_title = request.getParameter("mealkit_title");
 	String main_ingredient = request.getParameter("main_ingredient");
 	String mealkit_content = request.getParameter("mealkit_content");

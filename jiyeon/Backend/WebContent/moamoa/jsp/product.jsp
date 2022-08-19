@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"><!-- 한글 깨짐 오류 방지 -->
   <title>상품 상세 정보</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 </head>
@@ -24,7 +24,7 @@
    </div>
    <%
       //넘어온 상품 아이디값을 얻었다.
-      String title =request.getParameter("productTitle");
+      String title =request.getParameter("productTitle");//전달 값 가져오기
       //넘어온 상품아이디값을 이용해 실제 해당되는 Product객체를 얻음.
       ProductDTO product = new ProductDAO().getProductByTitle(title);
    %>

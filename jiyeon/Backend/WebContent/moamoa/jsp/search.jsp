@@ -7,7 +7,7 @@
 <%@page import="java.util.*"%>
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><!-- 한글 깨짐 오류 방지 -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recipe Moa Moa</title>
@@ -291,7 +291,7 @@
                         <br>
                         <h4>레시피 검색 결과</h4>
 				<%
-					String pkeyword = request.getParameter("search_keyword");
+					String pkeyword = request.getParameter("search_keyword");//전달 값 가져오기
 					
 					SearchDAO dao = new SearchDAO();
 					List<PostDTO> presult = dao.findPost(pkeyword);

@@ -7,11 +7,11 @@
 <html>
 <head>
 <link rel="stylesheet" href="/css/bootstrap.min.css">
-<meta charset="UTF-8">
+<meta charset="UTF-8"><!-- 한글 깨짐 오류 방지 -->
 <title>밀키트 계약</title>
 <script type="text/javascript">
 	var openlist;
-	function mealkit_list_open(){
+	function mealkit_list_open(){// 팝업창 생성
 		window.name = "parentForm";
 		parentForm = window.open("con_post_list.jsp", "post_list", "width=800, height= 500, top=50, left=50");
 	}

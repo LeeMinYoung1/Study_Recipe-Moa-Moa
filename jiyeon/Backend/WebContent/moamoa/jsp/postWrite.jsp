@@ -4,12 +4,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8"><!-- 한글 깨짐 오류 방지 -->
 <title>Insert title here</title>
 </head>
 <body>
 <!-- 게시글(레시피) 쓰기 기능 -->
 <%	
+	//전달 값 가져오기
 	String title = request.getParameter("title");
 	String ingredient = request.getParameter("ingredient");
 	String content = request.getParameter("content");

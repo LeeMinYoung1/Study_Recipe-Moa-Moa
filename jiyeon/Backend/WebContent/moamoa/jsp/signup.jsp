@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8"><!-- 한글 깨짐 오류 방지 -->
 <title>Insert title here</title>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -13,6 +13,7 @@
 <body>
 <!-- 회원가입 기능 -->
 <%
+	//전달 값 가져오기
 	String id = request.getParameter("join_id");
 	String password = request.getParameter("join_pw");
 	String password1 = request.getParameter("join_pw1");
