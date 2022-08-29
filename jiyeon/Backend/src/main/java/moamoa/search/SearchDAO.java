@@ -16,7 +16,7 @@ public class SearchDAO {
 	PreparedStatement pstmt = null;
 	ResultSet rs;
 	
-	public SearchDAO() {
+	public SearchDAO() {// 생성자 -> 오라클 연결
 		try {
 				Class.forName(driver);
 				System.out.println("오라클드라이버 성공");
@@ -30,7 +30,7 @@ public class SearchDAO {
 		Connection conn = null;
 		
 		try {
-			conn=DriverManager.getConnection(url, "TEST_USER", "12345");
+			conn=DriverManager.getConnection(url, "TEST_USER", "12345");//연결할 유저이름, 비밀번호 입력
 		}catch(SQLException e) {
 			// TODO Auto-generated catch block
 			System.out.println("커넥션실패");
